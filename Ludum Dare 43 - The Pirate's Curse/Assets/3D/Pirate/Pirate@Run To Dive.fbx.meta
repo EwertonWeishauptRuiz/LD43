@@ -117,7 +117,7 @@ ModelImporter:
     4300008: Beards
     4300010: Hair
     4300012: Bottoms
-    7400000: mixamo.com
+    7400000: Run To Dive
     9500000: //RootNode
     13700000: Beards
     13700002: Body
@@ -126,9 +126,135 @@ ModelImporter:
     13700008: Eyes
     13700010: Hair
     13700012: Moustaches
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Beard_Diffuse
+    second: {fileID: 2800000, guid: 5774fc93a13eeab4ea2f012e6c9a01b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Beard_Gloss
+    second: {fileID: 2800000, guid: 6a34c5d6cdd39024a9a9bcc1bc32d922, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Beard_Normal
+    second: {fileID: 2800000, guid: dc8405243737fd9458e83fff52651e83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Beard_Opacity
+    second: {fileID: 2800000, guid: 25bb1817ac9d2954598bb928e44b1e92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Beard_Specular
+    second: {fileID: 2800000, guid: 30497339e4c83e94487656e1f35f7441, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Body_Diffuse
+    second: {fileID: 2800000, guid: d8275e3ac5b5f87479c4fcd6c7e67b2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Body_Gloss
+    second: {fileID: 2800000, guid: 799774df5ad9a8c479a58f70cfe0b259, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Body_Normal
+    second: {fileID: 2800000, guid: 1d35ef89f7b3cbe4fb2b499e2d3e8d6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Body_Opacity
+    second: {fileID: 2800000, guid: 87f8011bad904654dbeee03545c9ad30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Body_Specular
+    second: {fileID: 2800000, guid: f2142403bccbd0545aad6b629ad355b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Bottom_Diffuse
+    second: {fileID: 2800000, guid: ff164b8f34b395748b9697e865acd481, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Bottom_Gloss
+    second: {fileID: 2800000, guid: 2e068ba47ce5b45499ce1a2387d70a9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Bottom_Normal
+    second: {fileID: 2800000, guid: b5f61db73008ee74c998fd24b6878f41, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Bottom_Opacity
+    second: {fileID: 2800000, guid: f35dd1529047c62408bfb31268b44565, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Bottom_Specular
+    second: {fileID: 2800000, guid: d2ad7b2407139e24bb3d6adc9dec20c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Hair_Diffuse
+    second: {fileID: 2800000, guid: a8e6546e99c9c8c4d9ec86c0350b5680, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Hair_Gloss
+    second: {fileID: 2800000, guid: 1f37a3c681f0f6c4c8a08ee794bb670b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Hair_Normal
+    second: {fileID: 2800000, guid: f5aea06db672da34091a6701249a33d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Hair_Opacity
+    second: {fileID: 2800000, guid: b8196922dcdeab9488114d39a9793331, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Hair_Specular
+    second: {fileID: 2800000, guid: 76dc88da7fee5734f99b2fd387978f12, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Moustache_Diffuse
+    second: {fileID: 2800000, guid: 541d1e88b1380634fbbd6287d0678177, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Moustache_Gloss
+    second: {fileID: 2800000, guid: 88887bba9b3d83e49b4469c1e5fb2f43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Moustache_Normal
+    second: {fileID: 2800000, guid: 7bfa15673a2b6f4479ffd6235e41a71f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Moustache_Opacity
+    second: {fileID: 2800000, guid: f9d4592d2d5507849923d83c39e81ce8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pirate_Moustache_Specular
+    second: {fileID: 2800000, guid: c53e941d1e3cd914fa59da1ee9bce54d, type: 3}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -146,14 +272,42 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run To Dive
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -185,7 +339,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -202,7 +356,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: efec3d4e8da8d8b449ec23d5b94a083e,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
