@@ -4,26 +4,32 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour {
 
-  Rigidbody rbd;
-
-  Transform parentPivot;
+  Rigidbody rbd; 
 
   public float speed;
   public float turnSpeed;
 
+  [Header("Amounts")]
+  public int crates;
+
+  float horizontalInput;
+
 	// Use this for initialization
 	void Start () {
-    rbd = GetComponent<Rigidbody>();
-    parentPivot = GetComponent<Transform>().transform.parent.transform;
+    rbd = GetComponent<Rigidbody>();    
 	}
 	
 	// Update is called once per frame
 	void Update () {
-    var x = Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed;
+    horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * turnSpeed;      
+  }
 
-    parentPivot.transform.Rotate(0, x, 0);
+  private void FixedUpdate() {
+    rbd.AddTorque(0, horizontalInput * turnSpeed, 0);
+    rbd.velocity = new Vector3(0, 0, speed);
 
-    rbd.AddForce(0, 0, speed);
+    float velocityMagnitude = rbd.velocity.magnitude;
 
-	}
+    rbd.velocity = transform.forward * velocityMagnitude;
+  }
 }
