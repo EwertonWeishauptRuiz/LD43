@@ -77,6 +77,8 @@ public class PlayerBehaviour : MonoBehaviour {
 
     if (dead) {
       rbd.useGravity = true;
+      sailStatus = -2;
+      speed = 0;
     }
   }
 
@@ -134,7 +136,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
   void UIElements() {
     crateText.text = "Crates: " + crates.ToString();
-    crewText.text = "Crates: " + crew.ToString();
+    crewText.text = "Crew: " + crew.ToString();
   }
 
   private void OnTriggerEnter(Collider other) {
