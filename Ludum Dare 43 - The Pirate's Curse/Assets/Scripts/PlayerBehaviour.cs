@@ -17,7 +17,8 @@ public class PlayerBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-    rbd = GetComponent<Rigidbody>();    
+    rbd = GetComponent<Rigidbody>();
+    rbd.maxAngularVelocity = 0.5f;
 	}
 	
 	// Update is called once per frame
@@ -29,7 +30,10 @@ public class PlayerBehaviour : MonoBehaviour {
     rbd.AddTorque(0, horizontalInput * turnSpeed, 0);
     rbd.velocity = new Vector3(0, 0, speed);
 
-    float velocityMagnitude = rbd.velocity.magnitude;
+    print(rbd.maxAngularVelocity);
+
+
+    float velocityMagnitude = rbd.velocity.magnitude;    
 
     rbd.velocity = transform.forward * velocityMagnitude;
   }
