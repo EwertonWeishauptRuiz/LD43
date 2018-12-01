@@ -17,11 +17,12 @@ public class PlayerBehaviour : MonoBehaviour {
   public int crew;
 
   int sailStatus;
-  bool canThrow;
+  bool canThrow, gameOver;
 
   [Header("Prefabs and References")]
   public Transform exitPointCrate;
-  public GameObject cratePrefab;
+  public GameObject cratePrefab, piratePrefab;
+  public GameObject[] exitPointsPirate;
 
   [Header("UI Elements")]
   public TextMeshProUGUI crateText;
@@ -56,12 +57,17 @@ public class PlayerBehaviour : MonoBehaviour {
     }
 
     //Expell crew member
-    if (Input.GetMouseButtonDown((1)) && crew > 0) {
+    if (Input.GetMouseButtonDown((1)) && crew > 0 && canThrow) {
+      StartCoroutine(ExpellPirate());
       crew--;
     }
 
     // UI Elements Renderers
     UIElements();
+    if (gameOver && speed >= 0) {
+      speed -= Time.deltaTime;
+    }
+
   }
 
   private void FixedUpdate() {
@@ -76,15 +82,15 @@ public class PlayerBehaviour : MonoBehaviour {
   void SetShipSpeed() {
     switch (sailStatus) {
       case 0:
-        speed = 2.5f;
-      maxTurnPoint = 1f;
+        speed = 1f;
+      maxTurnPoint = 1.2f;
         break;
       case 1:
-        speed = 5;
-      maxTurnPoint = .7f;
+        speed = 2.5f;
+      maxTurnPoint = .8f;
         break;
       case 2:
-        speed = 7;
+        speed = 5;
       maxTurnPoint = .5f;
         break;
     }
@@ -99,6 +105,23 @@ public class PlayerBehaviour : MonoBehaviour {
     StopCoroutine(ExpellCrates());
   }
 
+  IEnumerator ExpellPirate() {
+    canThrow = false;
+    int randomNumber = Random.Range(0, exitPointsPirate.Length - 1);
+    int rotationY = 0;
+    if (randomNumber <= 3) {
+      rotationY = 90;
+    } else {
+      rotationY = -90;
+    }
+    GameObject pirate = Instantiate(piratePrefab, exitPointsPirate[randomNumber].transform.position, Quaternion.Euler(0, rotationY, 0));
+    pirate.transform.parent = gameObject.transform;
+    crates--;
+    yield return new WaitForSeconds(1f);
+    canThrow = true;
+    StopCoroutine(ExpellPirate());
+  }
+
   void UIElements() {
     crateText.text = "Crates: " + crates.ToString();
     crewText.text = "Crates: " + crew.ToString();
@@ -108,6 +131,11 @@ public class PlayerBehaviour : MonoBehaviour {
     if (other.CompareTag("Crate")) {
       print("Crate Picked");
       crates++;
+    }
+
+    if (other.CompareTag("EndTrigger")) {
+      sailStatus = -1;
+      gameOver = true;                  
     }
   }
 }

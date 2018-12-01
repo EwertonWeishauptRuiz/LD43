@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Crate
   - Water
+  - EndTrigger
   layers:
   - Default
   - TransparentFX

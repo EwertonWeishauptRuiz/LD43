@@ -11,6 +11,21 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1278376402353530}
   m_IsPrefabAsset: 1
+--- !u!1 &1010648791351128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4045357120405298}
+  m_Layer: 0
+  m_Name: ExitPirateL
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1037505201163208
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,6 +38,21 @@ GameObject:
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1229979980086724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4754261399419504}
+  m_Layer: 0
+  m_Name: ExitPirate-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -78,6 +108,81 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1376864577901040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4120803459647912}
+  m_Layer: 0
+  m_Name: ExitPirateL
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1466079023492524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4483374197988568}
+  m_Layer: 0
+  m_Name: Exit-Crate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1478974248520092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4365774103246034}
+  m_Layer: 0
+  m_Name: ExitPirate-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1499741657505334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4970615858741380}
+  m_Layer: 0
+  m_Name: ExitPirateL
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1569775460563308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4245874207106660}
+  m_Layer: 0
+  m_Name: ExitPirate-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1594866712318480
 GameObject:
   m_ObjectHideFlags: 1
@@ -92,6 +197,36 @@ GameObject:
   m_Name: Group19246
   m_TagString: Untagged
   m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1709683059025604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4805902569503060}
+  m_Layer: 0
+  m_Name: ExitPirateL
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1747528747262218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4781550705395916}
+  m_Layer: 0
+  m_Name: ExitPirate-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -129,6 +264,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4045357120405298
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1010648791351128}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: -0.435, y: 0.041, z: 0.444}
+  m_LocalScale: {x: 0.9999986, y: 1, z: 1.0000036}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
+--- !u!4 &4120803459647912
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1376864577901040}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: -0.432, y: 0.376, z: 0.222}
+  m_LocalScale: {x: 0.9999986, y: 1, z: 1.0000076}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
+--- !u!4 &4245874207106660
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569775460563308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.307, y: 0.009, z: 0.4102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4277215637959962
 Transform:
   m_ObjectHideFlags: 1
@@ -155,6 +329,19 @@ Transform:
   m_Father: {fileID: 4669710405220562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4365774103246034
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478974248520092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.384, y: 0.009000003, z: 0.945}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4389076852111272
 Transform:
   m_ObjectHideFlags: 1
@@ -167,6 +354,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4669710405220562}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4483374197988568
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466079023492524}
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: -0.019997854, y: 0.7595786, z: -0.25151643}
+  m_LocalScale: {x: 0.11213895, y: 0.27151084, z: 0.27151084}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4503948514162922
 Transform:
@@ -188,10 +388,19 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278376402353530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.195, z: 15.8}
+  m_LocalPosition: {x: 0, y: 0.324, z: 485.85}
   m_LocalScale: {x: 1, y: 1, z: 2.4212}
   m_Children:
+  - {fileID: 4483374197988568}
+  - {fileID: 4245874207106660}
+  - {fileID: 4365774103246034}
   - {fileID: 4669710405220562}
+  - {fileID: 4754261399419504}
+  - {fileID: 4970615858741380}
+  - {fileID: 4045357120405298}
+  - {fileID: 4781550705395916}
+  - {fileID: 4120803459647912}
+  - {fileID: 4805902569503060}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211,8 +420,60 @@ Transform:
   - {fileID: 4981380130483496}
   - {fileID: 4389076852111272}
   m_Father: {fileID: 4611316674561506}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!4 &4754261399419504
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229979980086724}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: 0.285, y: 0.546, z: -0.228}
+  m_LocalScale: {x: 0.9999986, y: 1, z: 1.0000159}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
+--- !u!4 &4781550705395916
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747528747262218}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: 0.324, y: 0.31700003, z: 0.221}
+  m_LocalScale: {x: 0.9999986, y: 1, z: 1.00002}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
+--- !u!4 &4805902569503060
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709683059025604}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: -0.314, y: 0.516, z: -0.207}
+  m_LocalScale: {x: 0.9999986, y: 1, z: 1.0000117}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
+--- !u!4 &4970615858741380
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499741657505334}
+  m_LocalRotation: {x: -0, y: 0.0007790858, z: -0, w: -0.9999997}
+  m_LocalPosition: {x: -0.433, y: 0.1, z: 0.953}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 4611316674561506}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -360.089, z: 0}
 --- !u!4 &4981380130483496
 Transform:
   m_ObjectHideFlags: 1
@@ -479,5 +740,19 @@ MonoBehaviour:
   turnSpeed: 10
   crates: 150
   crew: 50
+  exitPointCrate: {fileID: 4483374197988568}
+  cratePrefab: {fileID: 1056219055238026, guid: 128684e7ec9fa0643b42bff4e6f46e9b,
+    type: 2}
+  piratePrefab: {fileID: 1915125243799542, guid: 95927164d304a2b449ab444a59698276,
+    type: 2}
+  exitPointsPirate:
+  - {fileID: 1569775460563308}
+  - {fileID: 1478974248520092}
+  - {fileID: 1229979980086724}
+  - {fileID: 1747528747262218}
+  - {fileID: 1499741657505334}
+  - {fileID: 1010648791351128}
+  - {fileID: 1376864577901040}
+  - {fileID: 1709683059025604}
   crateText: {fileID: 0}
   crewText: {fileID: 0}
