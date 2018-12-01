@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
   [Header("Amounts")]
   public int crates;
+  public int crew;
 
   float horizontalInput;
 
