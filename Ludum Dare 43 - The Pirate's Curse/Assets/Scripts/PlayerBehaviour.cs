@@ -11,13 +11,14 @@ public class PlayerBehaviour : MonoBehaviour {
   public float maxTurnPoint = .5f;
   public float speed = 5;
   public float turnSpeed;
+  public float shipHealth;
 
   [Header("Amounts")]
   public int crates;
   public int crew;
 
   int sailStatus;
-  bool canThrow, gameOver;
+  bool canThrow, gameOver, dead;
 
   [Header("Prefabs and References")]
   public Transform exitPointCrate;
@@ -29,6 +30,8 @@ public class PlayerBehaviour : MonoBehaviour {
   public TextMeshProUGUI crewText;
 
   float horizontalInput;
+
+  
 
 	// Use this for initialization
 	void Start () {
@@ -68,12 +71,19 @@ public class PlayerBehaviour : MonoBehaviour {
       speed -= Time.deltaTime;
     }
 
+    if(shipHealth < 0) {
+      dead = true;
+    }
+
+    if (dead) {
+      rbd.useGravity = true;
+    }
   }
 
   private void FixedUpdate() {
     rbd.AddTorque(0, horizontalInput * turnSpeed, 0);
-    rbd.velocity = new Vector3(0, 0, speed);
-
+    rbd.velocity = new Vector3(0, 0, speed);    
+    
     float velocityMagnitude = rbd.velocity.magnitude;    
 
     rbd.velocity = transform.forward * velocityMagnitude;
@@ -82,7 +92,7 @@ public class PlayerBehaviour : MonoBehaviour {
   void SetShipSpeed() {
     switch (sailStatus) {
       case 0:
-        speed = 1f;
+        speed = 2f;
       maxTurnPoint = 1.2f;
         break;
       case 1:
@@ -131,11 +141,25 @@ public class PlayerBehaviour : MonoBehaviour {
     if (other.CompareTag("Crate")) {
       print("Crate Picked");
       crates++;
+      Destroy(other.gameObject);
     }
 
     if (other.CompareTag("EndTrigger")) {
       sailStatus = -1;
       gameOver = true;                  
+    }
+  }
+
+  private void OnCollisionEnter(Collision collision) {
+    shipHealth--;
+    if (collision.relativeVelocity.magnitude >= 5) {
+      shipHealth -= shipHealth * .5f;
+    }
+    if (collision.relativeVelocity.magnitude >= 3) {
+      shipHealth -= shipHealth * .35f;
+    }
+    if (collision.relativeVelocity.magnitude >= 2) {
+      shipHealth -= shipHealth * .1f;
     }
   }
 }
