@@ -44,6 +44,13 @@ public class PlayerBehaviour : MonoBehaviour {
       sailStatus--;
     }
 
+    if (Input.GetMouseButtonDown((0)) && crates > 0){
+      crates--;
+    }
+
+    if (Input.GetMouseButtonDown((1)) && crew > 0) {
+      crew--;
+    }
 
     // UI Elements Renderers
     UIElements();
@@ -62,12 +69,15 @@ public class PlayerBehaviour : MonoBehaviour {
     switch (sailStatus) {
       case 0:
         speed = 2.5f;
+      maxTurnPoint = 1f;
         break;
       case 1:
         speed = 5;
+      maxTurnPoint = .7f;
         break;
       case 2:
-        speed = 10;
+        speed = 7;
+      maxTurnPoint = .5f;
         break;
     }
   }
@@ -75,5 +85,12 @@ public class PlayerBehaviour : MonoBehaviour {
   void UIElements() {
     crateText.text = "Crates: " + crates.ToString();
     crewText.text = "Crates: " + crew.ToString();
+  }
+
+  private void OnTriggerEnter(Collider other) {
+    if (other.CompareTag("Crate")) {
+      print("Crate Picked");
+      crates++;
+    }
   }
 }
