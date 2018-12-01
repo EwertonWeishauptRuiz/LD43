@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class ReleaseCrateBehaviour : MonoBehaviour {
 
-  Rigidbody rbd;
-  public bool released;
+  Rigidbody rbd;  
 	// Use this for initialization
 	void Start () {
     rbd = GetComponent<Rigidbody>();
-	}
+    rbd.AddForce(transform.right * 0.2f, ForceMode.Impulse);
+    rbd.useGravity = true;
+  }
 	
 	// Update is called once per frame
 	void Update () {
-    if (released) {
-      rbd.AddForce(transform.right * 0.2f, ForceMode.Impulse);
-      rbd.useGravity = true;
-    }
+
 	}
+
+  private void OnTriggerEnter(Collider other) {
+    if (other.CompareTag("Water")) {
+      rbd.useGravity = false;
+      rbd.isKinematic  = true;
+    }
+  }
 }

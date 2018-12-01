@@ -17,6 +17,11 @@ public class PlayerBehaviour : MonoBehaviour {
   public int crew;
 
   int sailStatus;
+  bool canThrow;
+
+  [Header("Prefabs and References")]
+  public Transform exitPointCrate;
+  public GameObject cratePrefab;
 
   [Header("UI Elements")]
   public TextMeshProUGUI crateText;
@@ -29,6 +34,7 @@ public class PlayerBehaviour : MonoBehaviour {
     sailStatus = 2;
     rbd = GetComponent<Rigidbody>();
     rbd.maxAngularVelocity = maxTurnPoint;
+    canThrow = true;
 	}
 	
 	// Update is called once per frame
@@ -44,10 +50,12 @@ public class PlayerBehaviour : MonoBehaviour {
       sailStatus--;
     }
 
-    if (Input.GetMouseButtonDown((0)) && crates > 0){
-      crates--;
+    // Expell Crate
+    if (Input.GetMouseButtonDown((0)) && crates > 0 && canThrow){
+      StartCoroutine(ExpellCrates());
     }
 
+    //Expell crew member
     if (Input.GetMouseButtonDown((1)) && crew > 0) {
       crew--;
     }
@@ -80,6 +88,15 @@ public class PlayerBehaviour : MonoBehaviour {
       maxTurnPoint = .5f;
         break;
     }
+  }
+
+  IEnumerator ExpellCrates() {
+    canThrow = false;
+    GameObject.Instantiate(cratePrefab, exitPointCrate.transform.position, Quaternion.identity);
+    crates--;
+    yield return new WaitForSeconds(1f);
+    canThrow = true;
+    StopCoroutine(ExpellCrates());
   }
 
   void UIElements() {
